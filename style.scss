@@ -1,0 +1,15 @@
+//variables
+/* Colors */
+$dc: hsl(185, 75%, 39%);
+$dblue: hsl(229, 23%, 23%);
+$gblue: hsl(227, 10%, 46%);
+
+//Import
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+
+//Styling
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: $dc;
+}
