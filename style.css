@@ -1,7 +1,140 @@
 /* Colors */
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: #19a2ae;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#pattern {
+  position: relative;
+}
+
+#pattern #pattern1 img {
+  width: 18em;
+  height: 30em;
+  bottom: 0;
+  position: absolute;
+}
+
+#pattern #pattern2 img {
+  margin-top: 25vh;
+  right: 0;
+  width: 20em;
+  height: 22em;
+  position: absolute;
+}
+
+#box {
+  position: relative;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+#box #bg-pattern img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#box #box-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#box #box-bio .dispImg {
+  margin: 0 auto;
+  position: relative;
+  bottom: 3rem;
+}
+
+#box #box-bio .dispImg img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+#box #box-bio .bio {
+  position: relative;
+  margin-bottom: 2em;
+  margin-top: -1.5em;
+  width: 100%;
+  border-bottom: 1px solid #e4e4e4;
+  text-align: center;
+}
+
+#box #box-bio .bio .name {
+  font-weight: 700;
+  font-size: 18px;
+  padding-right: 5px;
+  color: #414141;
+  letter-spacing: 0.5px;
+}
+
+#box #box-bio .bio .age {
+  font-weight: 400;
+  font-size: 18px;
+  color: #575757;
+}
+
+#box #box-bio .bio .state {
+  padding: 1.5em 0;
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+}
+
+footer {
+  margin-top: 20vh;
+  color: white;
+}
+
+footer .attribution a {
+  color: black;
+  text-decoration: none;
+}
+
+footer .attribution a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
