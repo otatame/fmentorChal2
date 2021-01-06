@@ -12,7 +12,7 @@ body {
   background-color: #19a2ae;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #pattern {
@@ -22,15 +22,13 @@ body {
 #pattern #pattern1 img {
   width: 18em;
   height: 30em;
-  bottom: 0;
   position: absolute;
 }
 
 #pattern #pattern2 img {
   margin-top: 25vh;
-  right: 0;
-  width: 20em;
-  height: 22em;
+  left: 50%;
+  width: 40em;
   position: absolute;
 }
 
@@ -59,11 +57,13 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.2);
+  width: 20em;
 }
 
 #box #bg-pattern img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  width: 100%;
 }
 
 #box #box-bio {
@@ -96,8 +96,7 @@ body {
 
 #box #box-bio .bio {
   position: relative;
-  margin-bottom: 2em;
-  margin-top: -1.5em;
+  margin-top: -2em;
   width: 100%;
   border-bottom: 1px solid #e4e4e4;
   text-align: center;
@@ -118,10 +117,56 @@ body {
 }
 
 #box #box-bio .bio .state {
-  padding: 1.5em 0;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
   font-size: 14px;
   color: grey;
   text-align: center;
+}
+
+#box #box-bio .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: inherit;
+  padding: 2em 1em;
+  text-align: center;
+  color: #414141;
+}
+
+#box #box-bio .info .followers .numb1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#box #box-bio .info .followers .label1 {
+  font-size: 10px;
+  padding-top: 0.8em;
+  letter-spacing: 2px;
+}
+
+#box #box-bio .info .likes .numb2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#box #box-bio .info .likes .label2 {
+  font-size: 10px;
+  padding-top: 0.8em;
+  letter-spacing: 2px;
+}
+
+#box #box-bio .info .photos .numb3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#box #box-bio .info .photos .label3 {
+  font-size: 10px;
+  padding-top: 0.8em;
+  letter-spacing: 2px;
 }
 
 footer {
@@ -136,5 +181,20 @@ footer .attribution a {
 
 footer .attribution a:hover {
   text-decoration: underline;
+}
+
+/* media queries */
+@media screen and (min-width: 320px) {
+  #pattern #pattern1 img {
+    width: 65em;
+    height: 55em;
+    margin-top: -45%;
+    left: -19%;
+  }
+  #pattern #pattern2 img {
+    width: 55em;
+    height: 50em;
+    left: 55%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
