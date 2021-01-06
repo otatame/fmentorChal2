@@ -188,13 +188,14 @@ footer .attribution a:hover {
   #pattern #pattern1 img {
     width: 65em;
     height: 55em;
-    margin-top: -45%;
-    left: -19%;
+    margin-top: -45em;
+    left: -19em;
   }
   #pattern #pattern2 img {
     width: 55em;
     height: 50em;
     left: 55%;
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=style.css.map */
